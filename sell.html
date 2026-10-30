@@ -1,53 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AASTU Gebeya</title>
 </head>
+
 <body>
     <h1>Sell With Us</h1>
     <p>Turn your ideas into income! Showcase your products,
-         share your services, and connect with the AASTU community. 
-         Your next customer could be just around the corner!<br>
-        <b>Start selling. Start growing. Make your mark!</b> 
-        </p>
+        share your services, and connect with the AASTU community.
+        Your next customer could be just around the corner!<br>
+        <b>Start selling. Start growing. Make your mark!</b>
+    </p>
 
-        <h2>Seller Guidlines</h2>
-        <ol>
-            <li>Be Authentic</li>
-            <li>Price Fairly</li>
-            <li>Stay Avaliable</li>
-            <li>Be Respectful</li>
-            <li>Sell Resposibly</li>
-        </ol>
+    <h2>Seller Guidlines</h2>
+    <ol>
+        <li>Be Authentic</li>
+        <li>Price Fairly</li>
+        <li>Stay Avaliable</li>
+        <li>Be Respectful</li>
+        <li>Sell Resposibly</li>
+    </ol>
 
-   <h3>Listing Informations</h3>
+    <h3>Listing Informations</h3>
 
-        <form>
-          <lable>Listing Name:</lable>
-          <input type="text" required>
-          <br>
-          <lable>Category</lable>
-          <select  name="category" required>
-                 <option >Clothing & Accessories</option>
-                 <option >Cosmetics & Beauty</option>
-                 <option >Food & Snacks</option>
-                 <option >Electronics</option>
-                 <option >Handmade Products</option>
-                 <option >Other</option>
-           </select>
-           <br>
-           <lable>Price</lable>
-           <input type="number" required>
-           <br>
-           <lable>Campus Location</lable>
-           <input type="text">
-           <br>
-           <lable>Description</lable>
-           <textarea></textarea>
+    <form>
+        <lable>Listing Title</lable>
+        <input type="text" placeholder="Enter Listing Title" required>
+        <br><br>
+        <label>Listing Type</label>
+        <input type="radio">
+        <lable>Product</lable>
+        <input type="radio">
+        <label>Service</label>
+        <br><br>
 
-        </form>
+        <lable>Category</lable>
+        <select name="category" placeholder="Select Category" required>
+            <option>Clothing & Accessories</option>
+            <option>Cosmetics & Beauty</option>
+            <option>Food & Snacks</option>
+            <option>Electronics</option>
+            <option>Handmade Products</option>
+            <option>Other</option>
+        </select>
+        <br><br>
+
+        <lable>Description</lable>
+        <textarea>Describe Your Product or Service</textarea>
+
+    </form>
+
+    <h3>Pricing And Details</h3>
+    <form>
+        <lable>Price(ETB)</lable><br>
+        <input type="number" placeholder="eg.1000" required>
+        <br><br>
+
+        <lable>Price Type</lable><br>
+        <select>
+            <option>Fixed</option>
+            <option>Negotiable</option>
+            <option>Free</option>
+        </select>
+        <br><br>
+
+        <lable>Avaliablity</lable><br>
+        <select>
+            <option>Avaliable</option>
+            <option>Out Of Stock</option>
+            <option>Coming Soon</option>
+            <option>Currently Unavaliable</option>
+        </select>
+        <br><br>
+
+        <lable>Condition</lable><br>
+        <select>
+            <option>Brand New</option>
+            <option>Used</option>
+        </select>
+
+    </form>
+
+    <h3>Product Image</h3>
+    <input type="file" accept="image/*" required>
+
+    <h3>Seller Information</h3>
+    <form>
+        <lable>Seller Name</lable><br>
+        <input type="text" placeholder="Your Full Name" required>
+        <br><br>
+        <lable>Phone Number</lable><br>
+        <input type="number" placeholder="+251xxxxxxxxx" required>
+        <br><br>
+        <lable>Email</lable><br>
+        <input type="email" placeholder="eg@gmail.com">
+        <br><br>
+        <lable>Campus Location</lable><br>
+        <input type="text" placeholder="eg. Block 05" required>
+    </form>
+
+    <h3>Confirm and Submit</h3>
+    <p>Please review and agree to our guidlines</p>
+    <input type="checkbox">
+    <lable>I confirm that the information provided is accurate</lable><br>
+    <input type="checkbox">
+    <lable>I agree to AASTU Marketplace selling guidlines</lable><br><br>
+
+    <button>Submit Listing</button>
+    <button>Reset Form</button>
+    <button>Cancel</button>
 
 </body>
+
 </html>
