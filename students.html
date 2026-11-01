@@ -6,29 +6,87 @@
       <title>Students service and shop</title>
   </head>
   <body>
+    <header>
     <h1>Student Services and Shops</h1>
     <p>Discover services and products offered by AASTU students.</p>
-    <div>
+    <nav>
       <a href="index.html">Home</a>
       <a href="shops.html">Shops</a>
       <a href="cafes.html">Cafes</a>
       <a href="discover.html">Discover</a>
       <a href="students.html">Student Services</a>
       <a href="sell.html">Sell with us</a>
-    </div>
-    <h2>Products</h2>
+    </nav>
+  </header>
+    <hr>
+    <main>
+      <h2>Products</h2>
     <p>Find products sold by students.</p>
+    <h3>List of product providers</h3>
     <ul>
-      <li>Quality Bonda</li>
-      <li>Cosmetics</li>
-      <li>Snacks</li>
+      <li>
+        <h3>Quality Bonda</h3>
+        <p>Quality bonda products offered by students.</p>
+      </li>
+      <li>
+        <h3>Cosmetics</h3>
+        <p>Beauty and personal care products available for students.</p>
+      </li>
+      <li>
+        <h3>Snacks</h3>
+        <p>Different snacks and small food products sold by students.</p>
+      </li>
     </ul>
+    <hr>
     <h2>Services</h2>
     <p>Find services offered by students.</p>
+    <h3>List of service providers</h3>
     <ul>
-      <li>Hair Braiding</li>
-      <li>Barber service</li>
-      <li>Delivery</li>
+      <li>
+        <h3>Hair Braiding</h3>
+        <p>Hair brading services provided by fellow students.</p>
+      </li>
+      <li>
+        <h3>Barber service</h3>
+        <p>Haircut and barber services available around campus.</p>
+      </li>
+      <li>
+        <h3>Delivery</h3>
+      <p>Delivery services that is provided by students</p>
+      </li>
     </ul>
+    <hr>
+    <h2>Register as a product provider</h2>
+    <p>Register your products to reach more students.</p>
+    <form>
+      <label for="pname">Full Name:</label>
+      <input type="text" id="pname" namme="fullname" required>
+      <br><br>
+      <label for="product">Product Name:</label>
+      <input type="text" id="product" name="product" required>
+      <br><br>
+      <label for="pcategory">Product Category:</label>
+      <select id="pcategory" name="category">
+        <option value="">Select Category:</option>
+        <option>Food and Snacks</option>
+        <option>Cosmotics</option>
+        <option>Quality Bondas</option>
+          </select>
+        <br><br>
+        <label for="plocation">Location:</label>
+        <input type="text" id="ploctaion" name="location">
+        <br><br>
+        <label for="pcontact">Phone numbe:</label>
+        <input type="tel" id="pcontact" name="phone" required>
+        <br><br>
+        <label for="pdescription">Product Description:</label>
+        <br>
+        <textarea id="pdescription" name="description" rows="4" cols="40"></textarea>
+        <br><br>
+        <input type="submit" value="Register Product">
+        <input type="reset" value="Clear Form">
+
+    </form>
+    </main>
   </body>
 </html>
