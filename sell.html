@@ -27,18 +27,18 @@
     <h3>Listing Informations</h3>
 
     <form>
-        <lable>Listing Title</lable>
-        <input type="text" placeholder="Enter Listing Title" required>
+        <label for="title">Listing Title</label>
+        <input type="text" id="title" name="title" placeholder="Enter Listing Title" required>
         <br><br>
         <label>Listing Type</label>
-        <input type="radio">
-        <lable>Product</lable>
-        <input type="radio">
-        <label>Service</label>
+        <input type="radio" id="product" value="product" name="listingType" >
+        <lable for="product">Product</lable>
+        <input type="radio" id="service" name="listingType" value="service">
+        <label for="service">Service</label>
         <br><br>
 
-        <lable>Category</lable>
-        <select name="category" placeholder="Select Category" required>
+        <label for="category">Category</label>
+        <select id="category" name="category" placeholder="Select Category" required>
             <option>Clothing & Accessories</option>
             <option>Cosmetics & Beauty</option>
             <option>Food & Snacks</option>
@@ -48,18 +48,18 @@
         </select>
         <br><br>
 
-        <lable>Description</lable>
-        <textarea>Describe Your Product or Service</textarea>
+        <label for="description">Description</label>
+        <textarea id="description" name="description" placeholder="Describe Your Product or Service"></textarea>
 
     </form>
 
     <h3>Pricing And Details</h3>
     <form>
-        <lable>Price(ETB)</lable><br>
-        <input type="number" placeholder="eg.1000" required>
+        <label for="price">Price(ETB)</label><br>
+        <input type="number" id="price"  placeholder="eg.1000" required>
         <br><br>
 
-        <lable>Price Type</lable><br>
+        <label for="priceType">Price Type</label><br>
         <select>
             <option>Fixed</option>
             <option>Negotiable</option>
@@ -67,7 +67,7 @@
         </select>
         <br><br>
 
-        <lable>Avaliablity</lable><br>
+        <label for="avaliability">Avaliablity</label><br>
         <select>
             <option>Avaliable</option>
             <option>Out Of Stock</option>
@@ -76,7 +76,7 @@
         </select>
         <br><br>
 
-        <lable>Condition</lable><br>
+        <label for="condition">Condition</label><br>
         <select>
             <option>Brand New</option>
             <option>Used</option>
@@ -85,29 +85,29 @@
     </form>
 
     <h3>Product Image</h3>
-    <input type="file" accept="image/*" required>
+    <input type="file" id="image" accept="image/*" required>
 
     <h3>Seller Information</h3>
     <form>
-        <lable>Seller Name</lable><br>
+        <label for="seller">Seller Name</label><br>
         <input type="text" placeholder="Your Full Name" required>
         <br><br>
-        <lable>Phone Number</lable><br>
+        <label for="phone">Phone Number</label><br>
         <input type="number" placeholder="+251xxxxxxxxx" required>
         <br><br>
-        <lable>Email</lable><br>
+        <label for="email">Email</label><br>
         <input type="email" placeholder="eg@gmail.com">
         <br><br>
-        <lable>Campus Location</lable><br>
+        <label for="campus">Campus Location</label><br>
         <input type="text" placeholder="eg. Block 05" required>
     </form>
 
     <h3>Confirm and Submit</h3>
     <p>Please review and agree to our guidlines</p>
     <input type="checkbox">
-    <lable>I confirm that the information provided is accurate</lable><br>
+    <label>I confirm that the information provided is accurate</label><br>
     <input type="checkbox">
-    <lable>I agree to AASTU Marketplace selling guidlines</lable><br><br>
+    <label>I agree to AASTU Marketplace selling guidlines</label><br><br>
 
     <button>Submit Listing</button>
     <button>Reset Form</button>
