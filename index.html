@@ -1,41 +1,223 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <title>AASTU ገበያ - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AASTU ገበያ — Campus Marketplace (Phase 1 HTML Only)</title>
 </head>
 <body>
+
+    <!-- Site Header -->
     <header>
-        <h1>AASTU ገበያ</h1>
+        <h1>AASTU ገበያ (AASTU Gebeya)</h1>
         <p><strong>Your Campus. Your Marketplace.</strong></p>
-        <nav>
-        <a href="index.html">Home</a> 
-            <a href="shops.html">Campus Shops</a> 
-            <a href="cafes.html">Cafes &amp; Lounges</a> 
-            <a href="students.html">Student Market</a> 
-            <a href="discover.html">Discover &amp; Compare</a> 
-            <a href="sell.html">Sell With Us</a>
-        </nav>
-    </header>
-    <hr>
-    <main>
-        <section>
-            <h2>Welcome to AASTU ገበያ</h2>
-            <p>
-                Welcome to the online marketplace for 
-                <abbr title="Addis Ababa Science and Technology University">AASTU</abbr>. 
-                We connect students with campus businesses in one place.
-            </p>
-            <h3>What You Can Explore:</h3>
+        <p><em>Discover Local. Shop Campus. Support Students.</em></p>
+        
+        <!-- Main Navigation Bar -->
+        <nav aria-label="Main Navigation">
             <ul>
-                <li>Campus Shops (Sidik, KK Green, Central, and more)</li>
-                <li>Cafes and Lounges around campus</li>
-                <li>Student-owned businesses and dorm shops</li>
+                <li><a href="index.html"><strong>Home</strong></a></li>
+                <li><a href="discover.html">Discover All</a></li>
+                <li><a href="shops.html">Campus Shops</a></li>
+                <li><a href="cafes.html">Cafés &amp; Menus</a></li>
+                <li><a href="students.html">Student Sellers</a></li>
+                <li><a href="sell.html">Sell With Us</a></li>
+            </ul>
+        </nav>
+        
+        <p><a href="sell.html"><strong>+ List Your Business</strong></a></p>
+    </header>
+
+    <hr>
+
+    <main>
+        <!-- Hero Section -->
+        <section aria-labelledby="hero-title">
+            <h2 id="hero-title">Your Campus. Your Marketplace.</h2>
+            <p>
+                Find your next coffee, discover campus essentials, explore student-owned businesses,
+                and support the people building something right here at 
+                <abbr title="Addis Ababa Science and Technology University">AASTU</abbr>.
+            </p>
+            <p>
+                <a href="discover.html">Explore Marketplace</a> | 
+                <a href="sell.html">I'm a Student Seller</a>
+            </p>
+
+            <figure>
+                <img src="images/kk green shop.jpg" alt="AASTU campus marketplace life and shops" width="600" height="380">
+                <figcaption>Community commerce at Addis Ababa Science and Technology University</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <!-- Campus Marketplace Statistics -->
+        <section aria-labelledby="stats-title">
+            <h2 id="stats-title">Marketplace at a Glance</h2>
+            <p><small><em>*Prototype figures representing our connected campus community directory</em></small></p>
+            <ul>
+                <li><strong>08</strong> — Campus Café &amp; Dining Spots</li>
+                <li><strong>05</strong> — Everyday Campus Shops</li>
+                <li><strong>19+</strong> — Independent Student Sellers</li>
+                <li><strong>01</strong> — United AASTU Community Hub</li>
             </ul>
         </section>
+
+        <hr>
+
+        <!-- Category Exploration Pillars -->
+        <section aria-labelledby="categories-title">
+            <h2 id="categories-title">Explore by Category</h2>
+            
+            <article>
+                <h3>1. Food &amp; Drinks</h3>
+                <p><em>Find your coffee break.</em></p>
+                <p>
+                    Explore café menus, compare macchiato, tea, and meal prices, and view actual menu board photos
+                    from KK Green, KK Yellow, G1, Fasika / Sew Sabi, and more before you walk over.
+                </p>
+                <p><a href="cafes.html">Browse Cafés &amp; Menus &rarr;</a></p>
+            </article>
+
+            <article>
+                <h3>2. Everyday Essentials</h3>
+                <p><em>Little things. Big convenience.</em></p>
+                <p>
+                    Stationery, exercise books, highlighters, photocopying, printing, personal soap, bottled water,
+                    and snacks available at Cydik Shop, KK Shops, Block 10, and Central Copy.
+                </p>
+                <p><a href="shops.html">Explore Campus Shops &rarr;</a></p>
+            </article>
+
+            <article>
+                <h3>3. Student Businesses</h3>
+                <p><em>Made here. Found here.</em></p>
+                <p>
+                    Support fellow AASTU students selling homemade bonda, crochet crafts, tote bags, thrift clothing,
+                    braiding services, laptop stickers, graphic design, and delivery runs.
+                </p>
+                <p><a href="students.html">Discover Student Sellers &rarr;</a></p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- Featured Highlights Section -->
+        <section aria-labelledby="featured-title">
+            <h2 id="featured-title">Featured Campus Highlights</h2>
+
+            <article>
+                <h3>KK Green Café</h3>
+                <figure>
+                    <img src="images/kk green menu1.jpg" alt="KK Green Café menu board" width="360" height="240">
+                    <figcaption>KK Green Café — Popular spot for morning macchiato, breakfast, and quick meals</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Food &amp; Coffee</p>
+                <p><strong>Sample Highlights:</strong> Macchiato (55 ETB), Special Breakfast (150 ETB), Chechebsa (120 ETB)</p>
+                <p><strong>Location:</strong> Near student residence dorm quad</p>
+                <p><a href="cafes.html#kk-green">View Full Menu &rarr;</a></p>
+            </article>
+
+            <article>
+                <h3>Cydik Shop</h3>
+                <figure>
+                    <img src="images/Cydik shop.jpg" alt="Cydik Shop storefront" width="360" height="240">
+                    <figcaption>Cydik Shop — Everyday campus stationery, writing supplies, and personal items</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Campus Shop</p>
+                <p><strong>Sample Highlights:</strong> Notebook (85 ETB), Pens (15 ETB), A4 Paper (180 ETB)</p>
+                <p><strong>Location:</strong> Main campus walkway</p>
+                <p><a href="shops.html#cydik-shop">View Shop Catalogue &rarr;</a></p>
+            </article>
+
+            <article>
+                <h3>Wintana's Crochet</h3>
+                <figure>
+                    <img src="images/Wintana's crochet.jpg" alt="Handmade crochet items by Wintana" width="360" height="240">
+                    <figcaption>Wintana's Crochet — Student handmade accessories and custom bags</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Student Handmade Products</p>
+                <p><strong>Sample Highlights:</strong> Crochet Keychains (120 ETB), Handmade Bags (450 ETB)</p>
+                <p><strong>Location:</strong> On-campus delivery &amp; pickup</p>
+                <p><a href="students.html#wintana">View Student Profile &rarr;</a></p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- How It Works Section -->
+        <section aria-labelledby="how-it-works-title">
+            <h2 id="how-it-works-title">How AASTU ገበያ Works</h2>
+            <ol>
+                <li>
+                    <strong>01 — Discover:</strong>
+                    Browse campus cafés, physical shops, and independent student businesses across all categories.
+                </li>
+                <li>
+                    <strong>02 — Compare:</strong>
+                    Explore real menu boards, check sample ETB prices, view product catalogues, and review opening hours.
+                </li>
+                <li>
+                    <strong>03 — Connect:</strong>
+                    Visit the physical location on campus or contact student entrepreneurs directly via Telegram or phone.
+                </li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- Student Seller Call to Action -->
+        <section aria-labelledby="cta-title">
+            <h2 id="cta-title">Are You an AASTU Student Entrepreneur?</h2>
+            <p>
+                Whether you bake snacks, knit custom crochet, thrift vintage clothes, offer design services,
+                or braid hair, <strong>AASTU ገበያ</strong> is built to showcase your business to thousands of fellow students.
+            </p>
+            <p>
+                <a href="sell.html"><strong>Register Your Student Business Today &rarr;</strong></a>
+            </p>
+        </section>
     </main>
-    
-    
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <h3>AASTU ገበያ (AASTU Campus Marketplace)</h3>
+        <p>Connecting the Addis Ababa Science and Technology University community.</p>
+
+        <nav aria-label="Footer Navigation">
+            <p><strong>Quick Navigation:</strong></p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover Directory</a></li>
+                <li><a href="shops.html">Campus Shops</a></li>
+                <li><a href="cafes.html">Cafés &amp; Menus</a></li>
+                <li><a href="students.html">Student Sellers</a></li>
+                <li><a href="sell.html">Sell With Us</a></li>
+            </ul>
+        </nav>
+
+        <aside>
+            <p>
+                <mark><strong>Course Prototype Notice:</strong></mark> 
+                This website is an academic project developed for <strong>Internet Programming 1</strong>
+                by a group of 6 students. Business names and photographs represent genuine AASTU community assets;
+                prices, hours, and contact details are demonstration placeholders. See <a href="DATA_REVIEW.md">DATA_REVIEW.md</a>.
+            </p>
+        </aside>
+
+        <address>
+            <p>
+                Addis Ababa Science and Technology University (AASTU)<br>
+                Kilinto, Akaki-Kality Sub City, Addis Ababa, Ethiopia<br>
+                Inquiries: <a href="mailto:support@aastugebeya.edu.et">support@aastugebeya.edu.et</a>
+            </p>
+        </address>
+
+        <p><small>&copy; 2026 AASTU ገበያ Team. All rights reserved. Phase 1 Semantic HTML5 Deliverable.</small></p>
+    </footer>
+
 </body>
 </html>
