@@ -1,125 +1,511 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-widith, 
-	initial-scale= 1.0">
-
-	<title>Discover AASTU ገበያ</title>
-	<link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover All — AASTU ገበያ (Phase 1 HTML Only)</title>
 </head>
-
 <body>
-	<header> 
-		<h1>Dsicover AASTU ገበያ</h1>
-		<p>Your campus martketplace,all in one place!</p>
-		
-		<nav aria-label="Main navigation">
-			<a href="index.html">Home</a>
-			<a href="shops.html">Shops</a>
-			<a href="cafes.html">Cafes</a>
-			<a href="students.html">Student Businesses</a>
-			<a href="discover.html">Discover</a>
-			<a href="sell.html">Sell</a>
-		</nav>
 
-	</header>
-	<main>
-		<section aria-labelledby="discover-intro">
-			<h2 id="discover-intro">Explore the Marketplace</h2>
-			 <p>
-                Discover products and services offered by campus shops,
-                student entrepreneurs, and other sellers in the AASTU community.
+    <!-- Site Header -->
+    <header>
+        <h1>AASTU ገበያ</h1>
+        <p><strong>Your Campus. Your Marketplace.</strong></p>
+        
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html"><strong>Discover All</strong></a></li>
+                <li><a href="shops.html">Campus Shops</a></li>
+                <li><a href="cafes.html">Cafés &amp; Menus</a></li>
+                <li><a href="students.html">Student Sellers</a></li>
+                <li><a href="sell.html">Sell With Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <!-- Page Introduction -->
+        <section aria-labelledby="discover-heading">
+            <h2 id="discover-heading">Find Your Next Favorite</h2>
+            <p>
+                Explore the places, products, and student-run businesses that make campus life easier.
+                Browse every verified café, physical shop, and independent student venture across AASTU.
             </p>
-        </section>
-		
-		<section aria-labelledby="categories-heading">	
-			<h2>Categories to discover</h2>
 
-			<ul>
-				<li>
-					Food and snacks
-					<ul>
-						<li>Chips and package snacks</li>
-						<li>Baked goods</li>
-						<li>Water and other beverages</li>
-					</ul>
-				</li>
-				<li>
-					Electronics and accessories
-					<ul>
-						<li>Headset and earphones</li>
-						<li>Phone accessories</li>
-						<li>Textbooks and study materials</li>
-					</ul>
-				</li>
+            <!-- Search and Filter Form (HTML Interface Demonstration) -->
+            <form action="discover.html" method="get">
+                <fieldset>
+                    <legend>Search &amp; Filter Marketplace Directory</legend>
+                    
+                    <p>
+                        <label for="search-input">Search by Business, Product, or Service:</label><br>
+                        <input type="text" id="search-input" name="q" placeholder="e.g. Macchiato, Notebook, Bonda, Tote Bag, Printing..." size="45">
+                        <button type="submit">Search Directory</button>
+                    </p>
 
-				<li>
-					Clothing and beauty
-					<ul>
-						<li>Perfumes</li>
-						<li>Nacklaces and accessories</li>
-						<li>Cosmetics</li>
-					</ul>
-				</li>
+                    <p>
+                        <label for="category-select">Filter by Category:</label>
+                        <select id="category-select" name="category">
+                            <option value="all">All Categories (30+ Listings)</option>
+                            <option value="cafes">Cafés &amp; Dining (8 Spots)</option>
+                            <option value="shops">Campus Shops (5 Shops)</option>
+                            <option value="food">Food &amp; Snacks (Student Made)</option>
+                            <option value="fashion">Fashion &amp; Thrift</option>
+                            <option value="handmade">Handmade Crafts</option>
+                            <option value="essentials">Everyday Essentials &amp; Supplies</option>
+                            <option value="creative">Creative &amp; Design Services</option>
+                            <option value="beauty">Beauty &amp; Personal Care</option>
+                            <option value="delivery">Campus Delivery Services</option>
+                        </select>
+                    </p>
+                   
+                </fieldset>
+            </form>
 
-				<li>
-					Student services
-					<ul>
-						<li>Hair braiding</li>
-						<li>Nail services</li>
-						<li>Henna designs</li>
-					</ul>
-				</li>
-			</ul>
-		</section>
-		
-		<section aria-labelledby="featured-heading">
-			<h2 id="featured featured-heading">
-			Featured Discoveries</h2>
-			<article>
-				 <h3>Phone Earphones</h3>
-                <p>Category: Electronics and Accessories</p>
-                <p>Seller: Central stationary</p>
-                <p>Sample listing for demonstration purposes.</p>
-            </article>
-
-            <article>
-                <h3>Handmade Accessories</h3>
-                <p>Category: Clothing and Beauty</p>
-                <p>Seller: Zowi Fashion</p>
-                <p>Sample listing for demonstration purposes.</p>
-            </article>
-
-            <article>
-                <h3>Fresh Baked Snacks</h3>
-                <p>Category: Food and Snacks</p>
-                <p>Seller: KK Green</p>
-                <p>Sample listing for demonstration purposes.</p>
-            </article>
+            <p><strong>Showing Total Active Listings: 31 Campus Establishments &amp; Student Ventures</strong></p>
         </section>
 
-        <section aria-labelledby="comparison-heading">
-            <h2 id="comparison-heading">Compare Your Options</h2>
+        <hr>
 
-            <p>
-                Compare products, prices, sellers, and available details
-                to help you make informed shopping decisions.
-            </p>
+        <!-- Category Jumps -->
+        <nav aria-label="Directory Jump Links">
+            <p><strong>Jump to Section:</strong></p>
+            <ul>
+                <li><a href="#section-cafes">Campus Cafés &amp; Lounges (8)</a></li>
+                <li><a href="#section-shops">Campus Physical Shops (5)</a></li>
+                <li><a href="#section-students">Student Businesses &amp; Services (18)</a></li>
+            </ul>
+        </nav>
 
-            <p>
-                A product comparison table will be added in the next milestone.
-            </p>
+        <hr>
+
+        <!-- SECTION 1: CAFÉS & LOUNGES -->
+        <section id="section-cafes" aria-labelledby="cafes-section-heading">
+            <h2 id="cafes-section-heading">Campus Cafés &amp; Dining</h2>
+            <p>Grab coffee, breakfast, traditional Ethiopian dishes, or study snacks.</p>
+
+            <article id="disc-kk-green">
+                <h3>1. KK Green Café</h3>
+                <figure>
+                    <img src="images/kk green menu1.jpg" alt="KK Green Café menu board" width="300" height="200">
+                    <figcaption>KK Green Café — Original menu board</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Café &amp; Restaurant</p>
+                <p><strong>Description:</strong> Your go-to campus spot for coffee, breakfast, refreshments, and quick meals.</p>
+                <p><strong>Sample Items:</strong> Ginger tea (25 ETB), Special Tasty soya (150 ETB), Firfir (130 ETB), Fresh Juice (150 ETB)</p>
+                <p><strong>Location:</strong> Near student residence dorm quad</p>
+                <p><strong>Hours:</strong> Mon–Sun, 6:30 AM – 11:30 PM</p>
+                <p><a href="cafes.html#kk-green">View Complete Menu Tables &rarr;</a></p>
+            </article>
+
+            <article id="disc-kk-yellow">
+                <h3>2. KK Yellow Café</h3>
+                <figure>
+                    <img src="images/kk yellow menu1.jpg" alt="KK Yellow Café menu board" width="300" height="200">
+                    <figcaption>KK Yellow Café — Original menu board</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Café &amp; Lounge</p>
+                <p><strong>Description:</strong> Fresh drinks, quick bites, and comfortable campus dining.</p>
+                <p><strong>Sample Items:</strong> Macchiato (55 ETB), Fresh Mango Juice (95 ETB), Pasta (180 ETB), French Fries (110 ETB)</p>
+                <p><strong>Location:</strong> Adjacent to student lounge area</p>
+                <p><strong>Hours:</strong> Mon–Sun, 7:00 AM – 10:00 PM</p>
+                <p><a href="cafes.html#kk-yellow">View Complete Menu Tables &rarr;</a></p>
+            </article>
+
+            <article id="disc-g1">
+                <h3>3. G1 Café</h3>
+                <figure>
+                    <img src="images/G1 menu.jpg" alt="G1 Café menu board" width="300" height="200">
+                    <figcaption>G1 Café — Original menu board</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Campus Café</p>
+                <p><strong>Description:</strong> Convenient dining and coffee right inside the academic zone.</p>
+                <p><strong>Sample Items:</strong> Macchiato (50 ETB), Omelette (100 ETB), Pasta with Tomato (160 ETB), Sambusa (25 ETB)</p>
+                <p><strong>Location:</strong> Ground Floor, Block G1 Academic Building</p>
+                <p><strong>Hours:</strong> Mon–Sat, 7:30 AM – 8:00 PM</p>
+                <p><a href="cafes.html#g1-cafe">View Complete Menu Tables &rarr;</a></p>
+            </article>
+
+            <article id="disc-fasika">
+                <h3>4. Fasika / Sew Sabi</h3>
+                <figure>
+                    <img src="images/Sew Sabi or Fasika menu.jpg" alt="Sew Sabi / Fasika menu board" width="300" height="200">
+                    <figcaption>Fasika / Sew Sabi — Authentic Ethiopian dishes</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Traditional Dining</p>
+                <p><strong>Description:</strong> Generous portions of fasting beyaynet, tibs, and firfir.</p>
+                <p><strong>Sample Items:</strong> Beyaynet (180 ETB), Shiro Wot (150 ETB), Special Tibs (280 ETB), Injera (25 ETB)</p>
+                <p><strong>Location:</strong> Behind main student dining hall</p>
+                <p><strong>Hours:</strong> Mon–Sun, 7:00 AM – 9:00 PM</p>
+                <p><a href="cafes.html#fasika">View Complete Menu Tables &rarr;</a></p>
+            </article>
+
+            <article id="disc-workers">
+                <h3>5. Workers Café</h3>
+                <p><strong>Category:</strong> Budget Campus Dining</p>
+                <p><strong>Description:</strong> Hearty, affordable meals and tea for campus staff, workers, and students.</p>
+                <p><strong>Sample Items:</strong> Macchiato (50 ETB), Bread &amp; Egg (90 ETB), Pasta (150 ETB), Shiro (150 ETB)</p>
+                <p><strong>Location:</strong> Campus Service &amp; Maintenance Compound</p>
+                <p><strong>Hours:</strong> Mon–Sat, 7:00 AM – 7:00 PM</p>
+                <p><a href="cafes.html#workers-cafe">View Complete Menu Tables &rarr;</a></p>
+            </article>
+
+            <article id="disc-teachers">
+                <h3>6. Teachers Café</h3>
+                <p><strong>Category:</strong> Faculty &amp; Student Lounge</p>
+                <p><strong>Description:</strong> Quiet, comfortable environment with premium coffee, sandwiches, and juice.</p>
+                <p><strong>Sample Items:</strong> Macchiato (55 ETB), Omelette (95 ETB), Club Sandwich (180 ETB), Special Juice (100 ETB)</p>
+                <p><strong>Location:</strong> Faculty &amp; Staff Lounge Building</p>
+                <p><strong>Hours:</strong> Mon–Fri, 8:00 AM – 6:00 PM</p>
+                <p><a href="cafes.html#teachers-cafe">View Complete Menu Tables &rarr;</a></p>
+            </article>
+
+            <article id="disc-central-cafe">
+                <h3>7. Central Café</h3>
+                <p><strong>Category:</strong> Library Plaza Café</p>
+                <p><strong>Description:</strong> The prime meeting point for study breaks, tea, ful, and sandwiches.</p>
+                <p><strong>Sample Items:</strong> Ful (120 ETB), Egg Sandwich (100 ETB), Pasta (150 ETB), Sambusa (25 ETB)</p>
+                <p><strong>Location:</strong> Beside University Main Library</p>
+                <p><strong>Hours:</strong> Mon–Sat, 7:30 AM – 9:00 PM</p>
+                <p><a href="cafes.html#central-cafe">View Complete Menu Tables &rarr;</a></p>
+            </article>
+
+            <article id="disc-kibnesh">
+                <h3>8. Kibnesh Café</h3>
+                <p><strong>Category:</strong> Local Cuisine</p>
+                <p><strong>Description:</strong> Homestyle Ethiopian cooking, freshly baked injera, and spiced tea.</p>
+                <p><strong>Sample Items:</strong> Shiro Wot (150 ETB), Beyaynet (180 ETB), Firfir (160 ETB), Tibs (260 ETB)</p>
+                <p><strong>Location:</strong> East Campus Student Gate Area</p>
+                <p><strong>Hours:</strong> Mon–Sun, 7:00 AM – 9:00 PM</p>
+                <p><a href="cafes.html#kibnesh-cafe">View Complete Menu Tables &rarr;</a></p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- SECTION 2: CAMPUS SHOPS -->
+        <section id="section-shops" aria-labelledby="shops-section-heading">
+            <h2 id="shops-section-heading">Campus Physical Shops</h2>
+            <p>Stationery, study materials, personal toiletries, and quick snacks right on campus.</p>
+
+            <article id="disc-cydik">
+                <h3>1. Cydik Shop</h3>
+                <figure>
+                    <img src="images/Cydik shop.jpg" alt="Cydik Shop" width="300" height="200">
+                    <figcaption>Cydik Shop storefront</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Stationery &amp; Daily Essentials</p>
+                <p><strong>Description:</strong> Your everyday campus stop for notebooks, pens, printing paper, and toiletries.</p>
+                <p><strong>Sample Catalogue:</strong> Exercise Notebook (85 ETB), Pens (15 ETB), A4 Paper Pack (180 ETB), Soap (65 ETB)</p>
+                <p><strong>Location:</strong> Main Campus Walkway</p>
+                <p><strong>Hours:</strong> Mon–Sat, 8:00 AM – 8:30 PM</p>
+                <p><a href="shops.html#cydik-shop">View Full Shop Catalogue &rarr;</a></p>
+            </article>
+
+            <article id="disc-kk-green-shop">
+                <h3>2. KK Green Shop</h3>
+                <figure>
+                    <img src="images/kk green shop.jpg" alt="KK Green Shop" width="300" height="200">
+                    <figcaption>KK Green Shop storefront</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Snacks, Drinks &amp; Stationery</p>
+                <p><strong>Description:</strong> Refreshments, bottled water, packaged snacks, and everyday student essentials.</p>
+                <p><strong>Sample Catalogue:</strong> Bottled Water (25 ETB), Soft Drink (45 ETB), Chips (35 ETB), Notebook (75 ETB)</p>
+                <p><strong>Location:</strong> Beside KK Green Café / Dorm Quad</p>
+                <p><strong>Hours:</strong> Mon–Sun, 7:30 AM – 9:00 PM</p>
+                <p><a href="shops.html#kk-green-shop">View Full Shop Catalogue &rarr;</a></p>
+            </article>
+
+            <article id="disc-kk-yellow-shop">
+                <h3>3. KK Yellow Shop</h3>
+                <figure>
+                    <img src="images/kk yellow shop.jpg" alt="KK Yellow Shop" width="300" height="200">
+                    <figcaption>KK Yellow Shop storefront</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Convenience &amp; Snacks</p>
+                <p><strong>Description:</strong> A convenient stop for quick snacks, drinks, instant noodles, and personal care.</p>
+                <p><strong>Sample Catalogue:</strong> Water (25 ETB), Juice (55 ETB), Instant Noodles (75 ETB), Biscuits (25 ETB)</p>
+                <p><strong>Location:</strong> Adjacent to KK Yellow Lounge</p>
+                <p><strong>Hours:</strong> Mon–Sat, 8:00 AM – 9:30 PM</p>
+                <p><a href="shops.html#kk-yellow-shop">View Full Shop Catalogue &rarr;</a></p>
+            </article>
+
+            <article id="disc-block-10">
+                <h3>4. Block 10 Shop</h3>
+                <figure>
+                    <img src="images/block 10 shop.jpg" alt="Block 10 Shop" width="300" height="200">
+                    <figcaption>Block 10 Shop</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Dormitory Essentials</p>
+                <p><strong>Description:</strong> Convenient everyday essentials right at the student residence building.</p>
+                <p><strong>Sample Catalogue:</strong> Bottled Water (25 ETB), Bread (35 ETB), Soap (60 ETB), Toothpaste (75 ETB)</p>
+                <p><strong>Location:</strong> Ground Floor, Block 10 Male Dormitory</p>
+                <p><strong>Hours:</strong> Mon–Sun, 7:00 AM – 10:00 PM</p>
+                <p><a href="shops.html#block-10-shop">View Full Shop Catalogue &rarr;</a></p>
+            </article>
+
+            <article id="disc-central-copy">
+                <h3>5. Central Copy &amp; Printing</h3>
+                <figure>
+                    <img src="images/Temesgen copy and stationary.jpg" alt="Central Copy and Printing" width="300" height="200">
+                    <figcaption>Central Copy &amp; Printing Centre (Temesgen Copy)</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Printing, Photocopying &amp; Binding</p>
+                <p><strong>Description:</strong> Your campus destination for printing, document scanning, binding, and paper supplies.</p>
+                <p><strong>Sample Catalogue:</strong> B&amp;W Printing (3 ETB/pg), Color Printing (15 ETB/pg), Spiral Binding (120 ETB), Lamination (40 ETB)</p>
+                <p><strong>Location:</strong> Ground Floor, Central Library Complex</p>
+                <p><strong>Hours:</strong> Mon–Sat, 8:00 AM – 7:30 PM</p>
+                <p><a href="shops.html#central-copy">View Full Shop Catalogue &rarr;</a></p>
+            </article>
+        </section>
+
+        <hr>
+
+        <!-- SECTION 3: STUDENT SELLERS -->
+        <section id="section-students" aria-labelledby="students-section-heading">
+            <h2 id="students-section-heading">Student Businesses &amp; Services</h2>
+            <p>Support your fellow AASTU students building businesses across campus.</p>
+
+            <article id="disc-quality-bonda">
+                <h3>1. Quality Bonda</h3>
+                <figure>
+                    <img src="images/Quality_bonda.jpg" alt="Quality Bonda snack" width="240" height="200">
+                    <figcaption>Quality Bonda — Hot fresh snack</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Food &amp; Snacks</p>
+                <p><strong>Description:</strong> Golden fried, sweet, and warm homemade bonda delivered fresh around campus.</p>
+                <p><strong>Pricing:</strong> Single: 15 ETB | Pack of 5: 70 ETB | Pack of 10: 130 ETB</p>
+                <p><strong>Contact:</strong> Telegram: <a href="https://t.me/quality233">@quality233</a> | Phone: <a href="tel:+251911234567">+251 91 123 4567</a></p>
+            </article>
+
+            <article id="disc-lucy-bonda">
+                <h3>2. Lucy Bonda</h3>
+                <figure>
+                    <img src="images/Lucy_bonda.jpg" alt="Lucy Bonda" width="240" height="200">
+                    <figcaption>Lucy Bonda</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Food &amp; Snacks</p>
+                <p><strong>Description:</strong> Delicious sweet bonda, tea-time pastries, and dorm snack orders.</p>
+                <p><strong>Pricing:</strong> 15 ETB each | Group orders available</p>
+                <p><strong>Contact:</strong> Telegram: <a href="https://t.me/habitesfa">@habitesfa</a> | Phone: <a href="tel:+251922345678">+251 92 234 5678</a></p>
+            </article>
+
+            <article id="disc-lina-snacks">
+                <h3>3. Lina Snacks</h3>
+                <figure>
+                    <img src="images/lina snacks.png" alt="Lina Snacks" width="240" height="200">
+                    <figcaption>Lina Snacks</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Food &amp; Snacks</p>
+                <p><strong>Description:</strong> Homemade potato crisps, cookies, donuts, and sambusa for campus tea breaks.</p>
+                <p><strong>Pricing:</strong> Potato Chips: 40 ETB | Sambusa: 25 ETB | Cookie Pack: 50 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @linasnacks_aastu | Phone: <a href="tel:+251933456789">+251 93 345 6789</a></p>
+            </article>
+
+            <article id="disc-eatup">
+                <h3>4. EatUp Fast Food Delivery</h3>
+                <figure>
+                    <img src="images/eatup fast food delivery.jpg" alt="EatUp Delivery" width="240" height="200">
+                    <figcaption>EatUp Delivery</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Campus Delivery</p>
+                <p><strong>Description:</strong> Fast dorm-to-dorm delivery for burgers, fries, sandwiches, and late-night snacks.</p>
+                <p><strong>Pricing:</strong> Campus Delivery Fee: 25 ETB | Menu from 90 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @eatup_delivery | Phone: <a href="tel:+251944567890">+251 94 456 7890</a></p>
+            </article>
+
+            <article id="disc-ruda-braids">
+                <h3>5. Ruda Hair Braids</h3>
+                <figure>
+                    <img src="images/Ruda hair braids.jpg" alt="Ruda Hair Braids" width="240" height="200">
+                    <figcaption>Ruda Hair Braids</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Beauty &amp; Grooming</p>
+                <p><strong>Description:</strong> Hair braiding, box braids, cornrows, and styling by appointment in female dorms.</p>
+                <p><strong>Pricing:</strong> Simple Braids: 250 ETB | Medium Braids: 450 ETB | Special Styling: 600 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @ruda_braids | Phone: <a href="tel:+251955678901">+251 95 567 8901</a></p>
+            </article>
+
+            <article id="disc-wintana">
+                <h3>6. Wintana's Crochet</h3>
+                <figure>
+                    <img src="images/Wintana's crochet.jpg" alt="Wintana's Crochet" width="240" height="200">
+                    <figcaption>Wintana's Crochet</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Handmade Crafts</p>
+                <p><strong>Description:</strong> Handmade crochet accessories, custom bucket hats, keychains, and flower bouquets.</p>
+                <p><strong>Pricing:</strong> Keychain: 120 ETB | Small Crochet Bag: 450 ETB | Handmade Flower: 100 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @wintana_crochet | Phone: <a href="tel:+251966789012">+251 96 678 9012</a></p>
+            </article>
+
+            <article id="disc-dtote">
+                <h3>7. D'Tote Tote Bags</h3>
+                <figure>
+                    <img src="images/Dtote tote-bags.jpg" alt="D'Tote Tote Bags" width="240" height="200">
+                    <figcaption>D'Tote Tote Bags</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Fashion &amp; Accessories</p>
+                <p><strong>Description:</strong> Durable canvas tote bags, aesthetic prints, and custom university book bags.</p>
+                <p><strong>Pricing:</strong> Basic Canvas: 350 ETB | Printed Graphic: 450 ETB | Custom Art: 550 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @dtote_bags | Phone: <a href="tel:+251977890123">+251 97 789 0123</a></p>
+            </article>
+
+            <article id="disc-classy-wear">
+                <h3>8. Classy Wear</h3>
+                <figure>
+                    <img src="images/Classy Wear.jpg" alt="Classy Wear clothing" width="240" height="200">
+                    <figcaption>Classy Wear</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Fashion &amp; Apparel</p>
+                <p><strong>Description:</strong> Quality shirts, hoodies, casual wear, and sneakers curated for campus style.</p>
+                <p><strong>Pricing:</strong> T-Shirts: 350 ETB | Hoodies: 850 ETB | Cargo Pants: 750 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @classywear_aastu | Phone: <a href="tel:+251912349999">+251 91 234 9999</a></p>
+            </article>
+
+            <article id="disc-kora-thrift">
+                <h3>9. Kora Thrift</h3>
+                <figure>
+                    <img src="images/Kora_thrift.jpg" alt="Kora Thrift" width="240" height="200">
+                    <figcaption>Kora Thrift</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Fashion &amp; Thrift</p>
+                <p><strong>Description:</strong> Affordable vintage jackets, denim, sweatshirts, and one-of-a-kind streetwear drops.</p>
+                <p><strong>Pricing:</strong> Thrift Tees: 200 ETB | Denim Jackets: 650 ETB | Sweaters: 400 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @korathrift | Phone: <a href="tel:+251923451111">+251 92 345 1111</a></p>
+            </article>
+
+            <article id="disc-adise-yarn">
+                <h3>10. Adise Yarn</h3>
+                <figure>
+                    <img src="images/Adise Yarn.jpg" alt="Adise Yarn" width="240" height="200">
+                    <figcaption>Adise Yarn</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Handmade Crafts</p>
+                <p><strong>Description:</strong> Cozy woolen beanies, custom scarves, and hand-knitted dorm decor.</p>
+                <p><strong>Pricing:</strong> Woolen Beanie: 220 ETB | Winter Scarf: 380 ETB | Phone Case: 150 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @adiseyarn | Phone: <a href="tel:+251934562222">+251 93 456 2222</a></p>
+            </article>
+
+            <article id="disc-stiff-stickers">
+                <h3>11. Stiff Stickers</h3>
+                <figure>
+                    <img src="images/Stiff stickers.jpg" alt="Stiff Stickers" width="240" height="200">
+                    <figcaption>Stiff Stickers</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Creative Goods</p>
+                <p><strong>Description:</strong> Waterproof vinyl stickers for laptops, water bottles, coding memes, and anime designs.</p>
+                <p><strong>Pricing:</strong> Single Sticker: 30 ETB | 5-Pack: 120 ETB | Custom Print Pack: 200 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @stiffstickers | Phone: <a href="tel:+251945673333">+251 94 456 3333</a></p>
+            </article>
+
+            <article id="disc-mdesign">
+                <h3>12. MDesign</h3>
+                <figure>
+                    <img src="images/mdesign.jpg" alt="MDesign logo and graphics" width="240" height="200">
+                    <figcaption>MDesign Studio</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Creative &amp; Digital Services</p>
+                <p><strong>Description:</strong> Event posters, club logos, presentation slide decks, and digital graphic design.</p>
+                <p><strong>Pricing:</strong> Poster Design: 300 ETB | Logo Package: 600 ETB | Slide Polish: 250 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @mdesign_creatives | Phone: <a href="tel:+251956784444">+251 95 567 4444</a></p>
+            </article>
+
+            <article id="disc-asquare-cart">
+                <h3>13. Asquare Cart</h3>
+                <figure>
+                    <img src="images/Asquare cart.jpg" alt="Asquare Cart" width="240" height="200">
+                    <figcaption>Asquare Cart</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Delivery &amp; Errands</p>
+                <p><strong>Description:</strong> On-campus errand runners, package pickups, and bookstore delivery service.</p>
+                <p><strong>Pricing:</strong> In-Campus Delivery: 30 ETB | Heavy Pickup: 60 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @asquarecart | Phone: <a href="tel:+251967895555">+251 96 678 5555</a></p>
+            </article>
+
+            <article id="disc-uni-essentials">
+                <h3>14. Uni Essentials Online Market</h3>
+                <figure>
+                    <img src="images/uni essentials online market.jpg" alt="Uni Essentials Online Market" width="240" height="200">
+                    <figcaption>Uni Essentials</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Dorm Essentials</p>
+                <p><strong>Description:</strong> LED study lamps, USB cables, power strips, adapters, and dorm room essentials.</p>
+                <p><strong>Pricing:</strong> Power Strip: 320 ETB | USB-C Fast Cable: 180 ETB | Desk Lamp: 450 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @uniessentials_market | Phone: <a href="tel:+251978906666">+251 97 789 6666</a></p>
+            </article>
+
+            <article id="disc-ebba-store">
+                <h3>15. Ebba Store</h3>
+                <figure>
+                    <img src="images/Ebba_store.jpg" alt="Ebba Store" width="240" height="200">
+                    <figcaption>Ebba Store</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Accessories &amp; Watches</p>
+                <p><strong>Description:</strong> Wristwatches, leather belts, sunglasses, and personal lifestyle accessories.</p>
+                <p><strong>Pricing:</strong> Leather Belt: 280 ETB | Sunglasses: 220 ETB | Watch: 650 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @ebbastore | Phone: <a href="tel:+251989017777">+251 98 890 7777</a></p>
+            </article>
+
+            <article id="disc-all-in-one">
+                <h3>16. All-in-One</h3>
+                <figure>
+                    <img src="images/Allinone.jpg" alt="All in One" width="240" height="200">
+                    <figcaption>All-in-One Shop</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Student Multi-Shop</p>
+                <p><strong>Description:</strong> Electronics accessories, earbuds, notebooks, and student daily supplies.</p>
+                <p><strong>Pricing:</strong> Wired Earphones: 150 ETB | Flash Drive 32GB: 350 ETB | Calc Batteries: 50 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @allinone_aastu | Phone: <a href="tel:+251990128888">+251 99 901 2888</a></p>
+            </article>
+
+            <article id="disc-ahadu">
+                <h3>17. Ahadu Market</h3>
+                <figure>
+                    <img src="images/Ahadu market.jpg" alt="Ahadu Market" width="240" height="200">
+                    <figcaption>Ahadu Market</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Food &amp; Daily Goods</p>
+                <p><strong>Description:</strong> Roasted barley (kolo), pure honey, packaged tea, and traditional student treats.</p>
+                <p><strong>Pricing:</strong> Roasted Kolo Pack: 45 ETB | Honey Jar 500g: 350 ETB | Spiced Tea Blend: 80 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @ahadumarket | Phone: <a href="tel:+251911993344">+251 91 199 3344</a></p>
+            </article>
+
+            <article id="disc-aastu-cosmo">
+                <h3>18. AASTU Cosmo</h3>
+                <figure>
+                    <img src="images/AASTUCosmo.jpg" alt="AASTU Cosmo" width="240" height="200">
+                    <figcaption>AASTU Cosmo</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Beauty &amp; Grooming</p>
+                <p><strong>Description:</strong> Lip balms, pocket perfumes, body lotions, and hygiene essentials for dorm life.</p>
+                <p><strong>Pricing:</strong> Moisturizing Cream: 180 ETB | Lip Balm: 80 ETB | Pocket Spray: 220 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @aastucosmo | Phone: <a href="tel:+251922884455">+251 92 288 4455</a></p>
+            </article>
+
+            <article id="disc-kal-markets">
+                <h3>19. Kal Markets</h3>
+                <figure>
+                    <img src="images/Kal markets.jpg" alt="Kal Markets" width="240" height="200">
+                    <figcaption>Kal Markets</figcaption>
+                </figure>
+                <p><strong>Category:</strong> Student Accessories &amp; Dorm Supplies</p>
+                <p><strong>Description:</strong> Curated campus accessories, organizers, and stationery supplies.</p>
+                <p><strong>Pricing:</strong> Desk Organizers: 180 ETB | Notebook Sets: 140 ETB</p>
+                <p><strong>Contact:</strong> Telegram: @kalmarkets | Phone: <a href="tel:+251933775566">+251 93 377 5566</a></p>
+            </article>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 AASTU ገበያ</p>
+    <hr>
 
-        <p>
-            A campus marketplace created by a team of AASTU students
-            to help the campus community discover local businesses and services.
-        </p>
+    <!-- Footer -->
+    <footer>
+        <p><strong>AASTU ገበያ — Central Marketplace Discovery</strong></p>
+        <p><a href="index.html">Back to Home</a> | <a href="shops.html">Shops</a> | <a href="cafes.html">Cafés</a> | <a href="students.html">Student Sellers</a> | <a href="sell.html">Sell With Us</a></p>
+        <p><small>&copy; 2026 AASTU ገበያ.</small></p>
     </footer>
 
 </body>
