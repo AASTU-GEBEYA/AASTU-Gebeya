@@ -1,87 +1,753 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafés & Lounges | AASTU ገበያ</title>
+    <title>Cafés &amp; Menus — AASTU ገበያ (Phase 1 HTML Only)</title>
 </head>
 <body>
-
-    <header>
+<header>
         <h1>AASTU ገበያ</h1>
-        <p>Discover places, products, and services around campus.</p>
+        <p><strong>Campus Cafés, Lounges &amp; Dining Menus</strong></p>
+        <p><em>Explore campus dining spots, browse sample menu information, and compare cafés and lounges around AASTU.</em></p>
 
-        <div>
-            <a href="index.html">Home</a> |
-            <a href="shops.html">Campus Shops</a> |
-            <a href="cafes.html">Cafés & Lounges</a> |
-            <a href="students.html">Student Shops & Services</a> |
-            <a href="discover.html">Discover & Compare</a> |
-            <a href="sell.html">Sell With Us</a>
-        <div>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover All</a></li>
+                <li><a href="shops.html">Campus Shops</a></li>
+                <li><a href="cafes.html"><strong>Cafés &amp; Menus</strong></a></li>
+                <li><a href="students.html">Student Sellers</a></li>
+                <li><a href="sell.html">Sell With Us</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <hr>
+
     <main>
-        <h2>Cafés & Lounges</h2>
+        <section aria-labelledby="cafes-intro-heading">
+            <h2 id="cafes-intro-heading">Campus Dining Directory &amp; Menu Boards</h2>
+            <p>
+                Find a place to enjoy coffee, food, or time with friends. Browse the eight locations listed below and check their available information.
+            </p>
 
-        <p>
-            Explore cafés and lounges around AASTU, find places to eat,
-            enjoy coffee, study, or relax with friends.
-        </p>
-
-        <section>
-            <h3>Workers</h3>
-            <p>Location: AASTU campus</p>
-            <p>Explore this place for food and refreshments.</p>
+            <nav aria-label="Café Quick Navigation">
+                <p><strong>Jump to Café:</strong></p>
+                <ul>
+                    <li><a href="#kk-green">1. KK Green Café (Photos &amp; Menu)</a></li>
+                    <li><a href="#kk-yellow">2. KK Yellow Café (Photos &amp; Menu)</a></li>
+                    <li><a href="#g1-cafe">3. G1 Café (Menu Board &amp; Menu)</a></li>
+                    <li><a href="#fasika">4. Fasika / Sew Sabi (Traditional Board &amp; Menu)</a></li>
+                    <li><a href="#workers-cafe">5. Workers Café</a></li>
+                    <li><a href="#teachers-cafe">6. Teachers Café</a></li>
+                    <li><a href="#central-cafe">7. Central Café</a></li>
+                    <li><a href="#kibnesh-cafe">8. Kibnesh Café</a></li>
+                </ul>
+            </nav>
         </section>
 
-        <section>
-            <h3>Teachers</h3>
-            <p>Location: AASTU campus</p>
-            <p>A place to enjoy refreshments and spend time with friends.</p>
-        </section>
+        <hr>
+<article id="kk-green" aria-labelledby="kk-green-heading">
+            <h2 id="kk-green-heading">1. KK Green Café</h2>
+            <p><strong>Location:</strong> Block 42.</p>
+            <p><strong>Hours:</strong> Please confirm directly with the café.</p>
+            <p><strong>Phone:</strong> <a href="tel:+251991161638">+251991161638</a></p>
 
-        <section>
-            <h3>Kibnesh</h3>
-            <p>Location: AASTU campus</p>
-            <p>Discover food and refreshments available here.</p>
-        </section>
+            <p>
+                <strong>Description:</strong> 
+                Your go-to campus spot for coffee, breakfast, refreshments, and quick meals.
+                A vibrant hub where students gather before morning lectures for fresh macchiato, egg sandwiches, and traditional firfir.
+            </p>
+<section aria-label="KK Green Menu Photos">
+                <h3>Menu Photographs :</h3>
+                <figure>
+                    <img src="images/kk green menu1.jpg" alt="KK Green Café menu board photo part 1" width="550">
+                    <figcaption>KK Green Café — Original menu board photo (Beverages, Hot Drinks &amp; Breakfast)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/kk green menu2.jpg" alt="KK Green Café menu board photo part 2" width="550">
+                    <figcaption>KK Green Café — Original menu board photo (Meals, Firfir &amp; Specials)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/kk green shop.jpg" alt="KK Green outdoor campus environment" width="450">
+                    <figcaption>KK Green campus terrace &amp; student seating area</figcaption>
+                </figure>
+            </section>
+<h3>Structured Menu & Price List (ETB)</h3>
+            <table border="1" cellpadding="6" cellspacing="0">
+                <caption><strong>KK Green Café Sample Menu Items</strong></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Illustrative Price (ETB)</th>
+                        <th scope="col">Serving Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Macchiato</td>
+                        <td>Coffee &amp; Hot Drinks</td>
+                        <td>55 ETB</td>
+                        <td>All Day</td>
+                    </tr>
+                    <tr>
+                        <td>Special Macchiato</td>
+                        <td>Coffee &amp; Hot Drinks</td>
+                        <td>75 ETB</td>
+                        <td>All Day</td>
+                    </tr>
+                    <tr>
+                        <td>Café Latte</td>
+                        <td>Coffee &amp; Hot Drinks</td>
+                        <td>85 ETB</td>
+                        <td>All Day</td>
+                    </tr>
+                    <tr>
+                        <td>Espresso</td>
+                        <td>Coffee &amp; Hot Drinks</td>
+                        <td>45 ETB</td>
+                        <td>All Day</td>
+                    </tr>
+                    <tr>
+                        <td>Special Spiced Tea</td>
+                        <td>Coffee &amp; Hot Drinks</td>
+                        <td>35 ETB</td>
+                        <td>All Day</td>
+                    </tr>
+                    <tr>
+                        <td>Chechebsa (with Honey &amp; Butter)</td>
+                        <td>Breakfast</td>
+                        <td>120 ETB</td>
+                        <td>Morning &amp; Afternoon</td>
+                    </tr>
+                    <tr>
+                        <td>Egg Sandwich</td>
+                        <td>Breakfast &amp; Snacks</td>
+                        <td>110 ETB</td>
+                        <td>All Day</td>
+                    </tr>
+                    <tr>
+                        <td>Club Sandwich</td>
+                        <td>Meals</td>
+                        <td>180 ETB</td>
+                        <td>Lunch &amp; Dinner</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Mango / Avocado Juice</td>
+                        <td>Cold Beverages</td>
+                        <td>90 ETB</td>
+                        <td>All Day</td>
+                    </tr>
+                    <tr>
+                        <td>Shiro Firfir</td>
+                        <td>Traditional Meals</td>
+                        <td>160 ETB</td>
+                        <td>Lunch &amp; Dinner</td>
+                    </tr>
+                    <tr>
+                        <td>Special Breakfast Platter</td>
+                        <td>Breakfast</td>
+                        <td>150 ETB</td>
+                        <td>Morning</td>
+                    </tr>
+                    <tr>
+                        <td>French Fries</td>
+                        <td>Snacks</td>
+                        <td>110 ETB</td>
+                        <td>All Day</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><small>*Sample information only. Menu items and prices have not been independently verified.</small></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
 
-        <section>
-            <h3>KK Yellow</h3>
-            <p>Location: AASTU campus</p>
-            <p>A campus spot to explore for food and drinks.</p>
-        </section>
+        <hr>
+<article id="kk-yellow" aria-labelledby="kk-yellow-heading">
+            <h2 id="kk-yellow-heading">2. KK Yellow Café</h2>
+            <p><strong>Location:</strong> Block 42.</p>
+            <p><strong>Hours:</strong> Please confirm directly with the café.</p>
+            <p><strong>Phone:</strong> <a href="tel:+251915353335">+251915353335</a></p>
 
-        <section>
-            <h3>KK Green</h3>
-            <p>Location: AASTU campus</p>
-            <p>Explore available refreshments and services.</p>
-        </section>
+            <p>
+                <strong>Description:</strong> 
+                Fresh drinks, quick bites, and comfortable campus dining. Known for its extensive pasta selection,
+                cold fresh juices, chicken sandwiches, and evening tea atmosphere.
+            </p>
+<section aria-label="KK Yellow Menu Photos">
+                <h3>Menu Photographs:</h3>
+                <figure>
+                    <img src="images/kk yellow menu1.jpg" alt="KK Yellow Café menu board photo part 1" width="550">
+                    <figcaption>KK Yellow Café — Original menu board photo (Juice, Hot Drinks &amp; Breakfast)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/kk yellow menu2.jpg" alt="KK Yellow Café menu board photo part 2" width="550">
+                    <figcaption>KK Yellow Café — Original menu board photo (Pasta, Sandwiches &amp; Dinners)</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/kk yellow shop.jpg" alt="KK Yellow café and shop plaza" width="450">
+                    <figcaption>KK Yellow plaza area</figcaption>
+                </figure>
+            </section>
+<h3>Structured Menu & Price List (ETB)</h3>
+            <table border="1" cellpadding="6" cellspacing="0">
+                <caption><strong>KK Yellow Café Sample Menu Items</strong></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Illustrative Price (ETB)</th>
+                        <th scope="col">Special Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Macchiato</td>
+                        <td>Hot Drinks</td>
+                        <td>55 ETB</td>
+                        <td>Rich Roast</td>
+                    </tr>
+                    <tr>
+                        <td>Hot Black / Spiced Tea</td>
+                        <td>Hot Drinks</td>
+                        <td>30 ETB</td>
+                        <td>Fresh Spices</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Mango Juice</td>
+                        <td>Fresh Juices</td>
+                        <td>95 ETB</td>
+                        <td>Pure Fruit</td>
+                    </tr>
+                    <tr>
+                        <td>Fasting Vegetable Sandwich</td>
+                        <td>Fasting &amp; Vegan</td>
+                        <td>100 ETB</td>
+                        <td>Fresh Salad &amp; Fries</td>
+                    </tr>
+                    <tr>
+                        <td>Chicken Breast Sandwich</td>
+                        <td>Non-Fasting</td>
+                        <td>170 ETB</td>
+                        <td>Grilled Fillet</td>
+                    </tr>
+                    <tr>
+                        <td>Italian Pasta with Meat / Tomato</td>
+                        <td>Meals</td>
+                        <td>180 ETB</td>
+                        <td>Served with Bread</td>
+                    </tr>
+                    <tr>
+                        <td>French Fries</td>
+                        <td>Snacks</td>
+                        <td>110 ETB</td>
+                        <td>Crispy Fried</td>
+                    </tr>
+                    <tr>
+                        <td>Special Breakfast (Eggs &amp; Chechebsa)</td>
+                        <td>Breakfast</td>
+                        <td>150 ETB</td>
+                        <td>Chef's Mix</td>
+                    </tr>
+                    <tr>
+                        <td>Scrambled Omelette</td>
+                        <td>Breakfast</td>
+                        <td>100 ETB</td>
+                        <td>With 2 Rolls</td>
+                    </tr>
+                    <tr>
+                        <td>Bottled Mineral Water</td>
+                        <td>Drinks</td>
+                        <td>25 ETB</td>
+                        <td>Chilled</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Cake Slice</td>
+                        <td>Pastry</td>
+                        <td>80 ETB</td>
+                        <td>Chocolate / Vanilla</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4"><small>*Sample demonstration prices in ETB.</small></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
 
-        <section>
-            <h3>Fasika / Sew Sabi</h3>
-            <p>Location: AASTU campus</p>
-            <p>Discover this campus café and its offerings.</p>
-        </section>
+        <hr>
+<article id="g1-cafe" aria-labelledby="g1-cafe-heading">
+            <h2 id="g1-cafe-heading">3. G1 Café</h2>
+            <p><strong>Location:</strong> Location not provided.</p>
+            <p><strong>Hours:</strong> Please confirm directly with the café.</p>
+            <p><strong>Phone:</strong> <a href="tel:+251963825398">+251963825398</a></p>
 
-        <section>
-            <h3>Central</h3>
-            <p>Location: AASTU campus</p>
-            <p>Find refreshments and a place to take a break.</p>
-        </section>
+            <p>
+                <strong>Description:</strong> 
+                Located directly at the base of the main engineering lecture complex, G1 Café is the primary destination
+                for students between laboratory sessions and design studio workshops.
+            </p>
+<section aria-label="G1 Menu Photo">
+                <h3>Menu Photograph :</h3>
+                <figure>
+                    <img src="images/G1 menu.jpg" alt="G1 Café original menu board photograph" width="550">
+                    <figcaption>G1 Café — Original menu board photographed inside Block G1</figcaption>
+                </figure>
+            </section>
+<h3>Structured Menu & Price List (ETB)</h3>
+            <table border="1" cellpadding="6" cellspacing="0">
+                <caption><strong>G1 Café Sample Menu Items</strong></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Illustrative Price (ETB)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Macchiato</td>
+                        <td>Coffee</td>
+                        <td>50 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Hot Tea</td>
+                        <td>Tea</td>
+                        <td>30 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Vegetable Omelette</td>
+                        <td>Breakfast</td>
+                        <td>100 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Pasta with Tomato Sauce</td>
+                        <td>Meals</td>
+                        <td>160 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Steamed Rice with Stew</td>
+                        <td>Meals</td>
+                        <td>190 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Crispy Lentil Sambusa</td>
+                        <td>Snacks</td>
+                        <td>25 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Mixed Juice</td>
+                        <td>Cold Drinks</td>
+                        <td>90 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Bread and Scrambled Egg</td>
+                        <td>Quick Bites</td>
+                        <td>90 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Special Jebena Coffee</td>
+                        <td>Traditional Coffee</td>
+                        <td>65 ETB</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><small>*Sample prices only; confirm actual menu items and prices with the café.</small></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
 
-        <section>
-            <h3>G1</h3>
-            <p>Location: AASTU campus</p>
-            <p>Explore this campus location for food and refreshments.</p>
-        </section>
+        <hr>
+<article id="fasika" aria-labelledby="fasika-heading">
+            <h2 id="fasika-heading">4. Fasika / Sew Sabi</h2>
+            <p><strong>Location:</strong> Block 18.</p>
+            <p><strong>Hours:</strong> Please confirm directly with the café.</p>
+            <p><strong>Phone:</strong> <a href="tel:+251931394233">+251931394233</a></p>
 
+            <p>
+                <strong>Description:</strong> 
+                Renowned across campus for rich traditional Ethiopian meals, hearty fasting beyaynet platters,
+                savory shiro, and spicy beef tibs with teff injera.
+            </p>
+<section aria-label="Sew Sabi / Fasika Menu Photo">
+                <h3>Menu Photograph :</h3>
+                <figure>
+                    <img src="images/Sew Sabi or Fasika menu.jpg" alt="Sew Sabi or Fasika original menu photograph" width="550">
+                    <figcaption>Sew Sabi or Fasika — Original menu board photo displayed on campus</figcaption>
+                </figure>
+            </section>
+<h3>Structured Menu & Price List (ETB)</h3>
+            <table border="1" cellpadding="6" cellspacing="0">
+                <caption><strong>Fasika / Sew Sabi Traditional Ethiopian Menu Items</strong></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Dietary Type</th>
+                        <th scope="col">Illustrative Price (ETB)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Beyaynet (Fasting Combo with 6 Stews)</td>
+                        <td>Fasting / Vegan</td>
+                        <td>180 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Clay-Pot Shiro Wot</td>
+                        <td>Fasting / Vegan</td>
+                        <td>150 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Spicy Misir Wot (Lentil Stew)</td>
+                        <td>Fasting / Vegan</td>
+                        <td>140 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Shiro Firfir with Green Pepper</td>
+                        <td>Traditional</td>
+                        <td>160 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Special Sizzling Beef Tibs</td>
+                        <td>Non-Fasting</td>
+                        <td>280 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Extra Pure Teff Injera</td>
+                        <td>Side</td>
+                        <td>25 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Clay-Pot Traditional Coffee</td>
+                        <td>Beverage</td>
+                        <td>35 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Ginger Spiced Tea</td>
+                        <td>Beverage</td>
+                        <td>30 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Special Feast Beyaynet (Full Platter)</td>
+                        <td>Signature Dish</td>
+                        <td>230 ETB</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><small>*Sample prices only; confirm actual menu items and prices with the café.</small></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+
+        <hr>
+<article id="workers-cafe" aria-labelledby="workers-heading">
+            <h2 id="workers-heading">5. Workers Café</h2>
+            <p><strong>Location:</strong> Block 49.</p>
+            <p><strong>Hours:</strong> Please confirm directly with the café.</p>
+            <p><strong>Phone:</strong> Number not fully provided.</p>
+
+            <p>
+                <strong>Description:</strong> 
+                Beloved for its humble, welcoming atmosphere and fair student prices. Provides quick,
+                energizing meals for university support staff, facilities crews, and budget-conscious students.
+            </p>
+
+            <table border="1" cellpadding="6" cellspacing="0">
+                <caption><strong>Workers Café Sample Menu</strong></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Illustrative Price (ETB)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Macchiato</td>
+                        <td>Hot Drinks</td>
+                        <td>50 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Hot Black Tea</td>
+                        <td>Hot Drinks</td>
+                        <td>30 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Bread and Fried Egg</td>
+                        <td>Breakfast</td>
+                        <td>90 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Classic Pasta with Sauce</td>
+                        <td>Meals</td>
+                        <td>150 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Steamed Rice with Chicken Stew</td>
+                        <td>Meals</td>
+                        <td>220 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Golden Crispy Sambusa</td>
+                        <td>Snacks</td>
+                        <td>25 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Avocado Juice</td>
+                        <td>Beverages</td>
+                        <td>85 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Special Breakfast (Bread, Egg, Tea)</td>
+                        <td>Breakfast Combo</td>
+                        <td>145 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Shiro Stew with Injera</td>
+                        <td>Traditional Meal</td>
+                        <td>150 ETB</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><small>*Sample menu only; confirm actual menu items and prices with the café.</small></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+
+        <hr>
+<article id="teachers-cafe" aria-labelledby="teachers-heading">
+            <h2 id="teachers-heading">6. Teachers Café</h2>
+            <p><strong>Location:</strong> Block 53.</p>
+            <p><strong>Hours:</strong> Please confirm directly with the café.</p>
+            <p><strong>Phone:</strong> Number not fully provided.</p>
+
+            <p>
+                <strong>Description:</strong> 
+                A serene and comfortable environment popular with instructors, graduate assistants, and students
+                seeking a peaceful atmosphere for academic consultations, research meetings, and quiet dining.
+            </p>
+
+            <table border="1" cellpadding="6" cellspacing="0">
+                <caption><strong>Teachers Café Sample Menu</strong></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Illustrative Price (ETB)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Macchiato</td>
+                        <td>Hot Drinks</td>
+                        <td>55 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Spiced Herbal Tea</td>
+                        <td>Hot Drinks</td>
+                        <td>30 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Cheese Omelette</td>
+                        <td>Breakfast</td>
+                        <td>95 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Shiro Stew with Fresh Salad</td>
+                        <td>Traditional</td>
+                        <td>150 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Italian Pasta Bolognese</td>
+                        <td>Lunch &amp; Dinner</td>
+                        <td>160 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Layered Special Fruit Juice</td>
+                        <td>Cold Drinks</td>
+                        <td>100 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Toasted Club Sandwich</td>
+                        <td>Sandwiches</td>
+                        <td>180 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Brewed Coffee</td>
+                        <td>Coffee</td>
+                        <td>35 ETB</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><small>*Sample menu only; confirm actual menu items and prices with the café.</small></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+
+        <hr>
+<article id="central-cafe" aria-labelledby="central-heading">
+            <h2 id="central-heading">7. Central Café</h2>
+            <p><strong>Location:</strong> In front of Block 14, around the amphitheatre.</p>
+            <p><strong>Hours:</strong> Please confirm directly with the café.</p>
+            <p><strong>Phone:</strong> Number not fully provided.</p>
+
+            <p>
+                <strong>Description:</strong> 
+                The most bustling café on campus! Positioned right beside the library plaza, Central Café
+                is legendary among AASTU students for fueling late-night study sessions and exam season prep.
+            </p>
+
+            <table border="1" cellpadding="6" cellspacing="0">
+                <caption><strong>Central Café Sample Menu</strong></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Illustrative Price (ETB)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Macchiato</td>
+                        <td>Hot Drinks</td>
+                        <td>50 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Lemon Spiced Tea</td>
+                        <td>Hot Drinks</td>
+                        <td>30 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Fava Bean Ful with Fresh Bread</td>
+                        <td>Breakfast Favorite</td>
+                        <td>120 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Scrambled Egg Sandwich</td>
+                        <td>Snacks</td>
+                        <td>100 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Pasta with Meat Stew</td>
+                        <td>Meals</td>
+                        <td>150 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Beyaynet Vegetable Platter</td>
+                        <td>Traditional</td>
+                        <td>170 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Crispy Fried Sambusa</td>
+                        <td>Snacks</td>
+                        <td>25 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Fresh Mango Juice</td>
+                        <td>Fresh Drinks</td>
+                        <td>90 ETB</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><small>*Sample menu only; confirm actual menu items and prices with the café.</small></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+
+        <hr>
+<article id="kibnesh-cafe" aria-labelledby="kibnesh-heading">
+            <h2 id="kibnesh-heading">8. Kibnesh Café</h2>
+            <p><strong>Location:</strong> Block 43.</p>
+            <p><strong>Hours:</strong> Please confirm directly with the café.</p>
+            <p><strong>Phone:</strong> Number not fully provided.</p>
+
+            <p>
+                <strong>Description:</strong> 
+                A cozy, warm neighborhood kitchen nestled near the east campus boundary. Famous for its savory tibs,
+                garlic shiro, freshly baked teff injera, and friendly family-style hospitality.
+            </p>
+
+            <table border="1" cellpadding="6" cellspacing="0">
+                <caption><strong>Kibnesh Café Sample Menu</strong></caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Illustrative Price (ETB)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Clay-Pot Shiro Wot</td>
+                        <td>Traditional</td>
+                        <td>150 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Beyaynet (Mixed Lentil &amp; Veggies)</td>
+                        <td>Traditional</td>
+                        <td>180 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Spicy Firfir with Green Chili</td>
+                        <td>Traditional</td>
+                        <td>160 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Sautéed Beef Tibs with Rosemary</td>
+                        <td>Specialty</td>
+                        <td>260 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Hot Tea with Cloves</td>
+                        <td>Hot Drinks</td>
+                        <td>30 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Jebena Brewed Coffee</td>
+                        <td>Hot Drinks</td>
+                        <td>35 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Special Papaya &amp; Orange Juice</td>
+                        <td>Fresh Drinks</td>
+                        <td>95 ETB</td>
+                    </tr>
+                    <tr>
+                        <td>Extra Soft Injera</td>
+                        <td>Side</td>
+                        <td>25 ETB</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><small>*Sample menu only; confirm actual menu items and prices with the café.</small></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
     </main>
 
-    <footer>
-        <p>&copy; 2026 AASTU ገበያ. All rights reserved.</p>
+    <hr>
+<footer>
+        <p><strong>AASTU ገበያ — Campus Cafés &amp; Dining Directory</strong></p>
+        <p><a href="index.html">Home</a> | <a href="discover.html">Discover All</a> | <a href="shops.html">Campus Shops</a> | <a href="students.html">Student Sellers</a> | <a href="sell.html">Sell With Us</a></p>
+        <p><small>&copy; 2026 AASTU ገበያ Team. Internet Programming 1 Phase 1 Deliverable.</small></p>
     </footer>
 
 </body>
