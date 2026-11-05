@@ -6,113 +6,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AASTU Gebeya</title>
 </head>
+<header>
+    <h1>AASTU ገበያ</h1>
+    <h2>Your Business Belongs Here.</h2>
+    <p>
+        Turn your ideas into income! Showcase your products,
+        share your services, and connect with the AASTU community.
+    </p>
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover All</a></li>
+        <li><a href="shops.html">Campus Shops</a></li>
+        <li><a href="cafes.html">Cafés & Menus</a></li>
+        <li><a href="sellers.html">Student Sellers</a></li>
+        <li><a href="sell.html">Sell With Us</a></li>
+        </ul>
+    </nav>
+
+</header>
+<hr>
 
 <body>
-    <h1>Sell With Us</h1>
-    <p>Turn your ideas into income! Showcase your products,
-        share your services, and connect with the AASTU community.
-        Your next customer could be just around the corner!<br>
-        <b>Start selling. Start growing. Make your mark!</b>
+    <h1>Grow Your Campus Business on AASTU ገበያ</h1>
+    <p>Are you an AASTU student running a small business, baking snacks, crafting handmade goods, thrifting fashion, 
+        or offering design and delivery services? Get discovered by fellow students, faculty, and university staff in
+         one centralized marketplace directory.
     </p>
 
-    <h2>Seller Guidlines</h2>
+    <h2>Why List With Us?</h2>
+    <ul>
+        <li><strong>Showcase Your Products:</strong> Give your products high visibility across dormitories and departments.</li>
+        <li><strong>Reach 10,000+ Campus Community Members:</strong> need to rely only on scattered Telegram chats.</li>
+        <li><strong>Promote Student Services:</strong>From hair braiding to tech repairs, let students find your booking handle.</li>
+        <li><strong>Direct Peer-to-Peer Contact:</strong>Customers connect directly with your Telegram or phone number.</li>
+        <li><strong>100% Free Listing:</strong>Zero commission or listing fees for active AASTU students.</li>
+    </ul>
+    <hr>
+
+    <h2>AASTU Community Seller Guidelines</h2>
+    <p>Before submitting your business listing, please review our campus student seller commitments:</p>
+
     <ol>
-        <li>Be Authentic</li>
-        <li>Price Fairly</li>
-        <li>Stay Avaliable</li>
-        <li>Be Respectful</li>
-        <li>Sell Resposibly</li>
+        <li><strong>Be Authentic:</strong> Only list genuine products or services you personally provide or craft.</li>
+        <li><strong>Price Fairly:</strong>State honest, transparent sample prices in Ethiopian Birr (ETB).</li>
+        <li><strong>Stay Available:</strong>Keep your provided Telegram username and phone active for client inquiries.</li>
+        <li><strong>Respect Campus Rules:</strong>Comply with AASTU residence and safety policies. No prohibited items.</li>
+        <li><strong>Deliver Responsibly:</strong>Maintain punctuality and respect when meeting fellow students for handoffs.</li>
     </ol>
 
-    <h3>Listing Informations</h3>
+    <hr>
+
+
+
+    <h2>Student Seller Listing Application Form</h2>
+
+    <p>Complete the form below to register your student business on AASTU ገበያ.</p>
 
     <form>
-        <label for="title">Listing Title</label>
-        <input type="text" id="title" name="title" placeholder="Enter Listing Title" required>
-        <br><br>
-        <label>Listing Type</label>
-        <input type="radio" id="product" value="product" name="listingType" >
-        <lable for="product">Product</lable>
+        <fieldset>
+            <legend><b>1. Business Profile & Venture Identity</b></legend>
+            <lable for="buisnessName">Business / Brand Name:*</lable><br>
+            <input type="text" id="buisnessName" name="buisnessName" placeholder="e.g. Wintana's Crochet, Lina Snacks" required>
+            <br> <br>
+            <p>Listing Type:*</p>
+
+        <input type="radio" id="products" name="listingType" value="products" required>
+        <label for="products">Physical Products:*</label><br>
+
         <input type="radio" id="service" name="listingType" value="service">
-        <label for="service">Service</label>
-        <br><br>
+        <label for="service">Campus Service:*</label><br>
 
-        <label for="category">Category</label>
-        <select id="category" name="category" placeholder="Select Category" required>
-            <option>Clothing & Accessories</option>
-            <option>Cosmetics & Beauty</option>
-            <option>Food & Snacks</option>
-            <option>Electronics</option>
-            <option>Handmade Products</option>
-            <option>Other</option>
+        <input type="radio" id="both" name="listingType" value="both">
+        <label for="both">Both Products & Services:*</label><br>
+        <br> <br>
+
+
+        <label for="category">Primary Category:*</label><br>
+        <select id="category" name="category" required>
+            <option value="">-- Select a Category --</option>
+            <option value="food">Food & Snacks(Baking, Drinks , Home cooked)</option>
+            <option value="fashion">Fashion & Streetwear(Clothing , Thrift , Shoes)</option>
+            <option value="crafts">Handmade Crafts(Crochet ,Knitting, Art)</option>
+            <option value="beauty">Beauty & Personal Care(Braids , Skincare)</option>
+            <option value="creative">Creative & Digital(Graphics ,Photo, Tutoring)</option>
+            <option value="tech">Everyday Essentials & Tech Hardware</option>
+            <option value="delivery">Campus Courier & Errand Delivery</option>
+            <option value="other">Other Campus Venture</option>
         </select>
+        <br> <br>
+        <label for="discription">Business Description:*</label><br>
+        <textarea required placeholder="Describe what you sell, what makes it unique , and how students can order from you..."></textarea>
         <br><br>
 
-        <label for="description">Description</label>
-        <textarea id="description" name="description" placeholder="Describe Your Product or Service"></textarea>
+        <label for="pricing">Sample Items & Pricing Details (in ETB):*</label><br>
+        <textarea required placeholder="e.g. Keychain: 120 ETB , Beanie:220 ETB , Delivery:25 ETB"></textarea>
 
+        </fieldset>
     </form>
-
-    <h3>Pricing And Details</h3>
+<br> <br>
     <form>
-        <label for="price">Price(ETB)</label><br>
-        <input type="number" id="price"  placeholder="eg.1000" required>
+        <fieldset>
+            <legend><b>2. Student Founder Credentials</b></legend>
+
+        <label for="studentName">Student Full Name:*</label><br>
+        <input type="text" id="studentName" name="studentName" placeholder="Your Full Name" required>
         <br><br>
 
-        <label for="priceType">Price Type</label><br>
-        <select>
-            <option>Fixed</option>
-            <option>Negotiable</option>
-            <option>Free</option>
-        </select>
+        <label for="studentId">AASTU Student ID Number:*</label><br>
+        <input type="text" id="studentId" name="studentId" placeholder="ETS0133/14" required>
+        <br> <br>
+        <label for="department">Department & Academic Year:*</label><br>
+        <input type="text" id="department" name="department" placeholder="e.g. Software Engineering - 3rd Year" required>
+         <br><br>
+        <label for="dormitory">Dormitory Block / Campus Location:*</label><br>
+        <input type="text" id="dormitory" name="dormitory" placeholder="e.g. Block 10, Female Dorm Wing B , off-Campus">
         <br><br>
 
-        <label for="avaliability">Avaliablity</label><br>
-        <select>
-            <option>Avaliable</option>
-            <option>Out Of Stock</option>
-            <option>Coming Soon</option>
-            <option>Currently Unavaliable</option>
-        </select>
-        <br><br>
-
-        <label for="condition">Condition</label><br>
-        <select>
-            <option>Brand New</option>
-            <option>Used</option>
-        </select>
+        </fieldset>
 
     </form>
+    <br> <br>
 
-    <h3>Product Image</h3>
-    <input type="file" id="image" accept="image/*" required>
-
-    <h3>Seller Information</h3>
     <form>
-        <label for="seller">Seller Name</label><br>
-        <input type="text" placeholder="Your Full Name" required>
-        <br><br>
-        <label for="phone">Phone Number</label><br>
-        <input type="number" placeholder="+251xxxxxxxxx" required>
-        <br><br>
-        <label for="email">Email</label><br>
-        <input type="email" placeholder="eg@gmail.com">
-        <br><br>
-        <label for="campus">Campus Location</label><br>
-        <input type="text" placeholder="eg. Block 05" required>
+        <fieldset>
+            <legend><b>3. Customer Contact Channels</b></legend>
+            <label for="username">Telegram Username or Group Link:*</label><br>
+            <input type="text" id="username" name="username" placeholder="@your_username or https://t.me/your_group" required>
+            <br><br>
+            <label for="mobile">Mobile Phone Number:*</label><br>
+            <input type="tel" id="mobile" name="mobile" placeholder="+251 9X XXX XXXX" required>
+            <br> <br>
+            <label for="insta">Instagram Profile / Handle (Optional)</label><br>
+            <input type="text" id="insta" name="insta" placeholder="@your_business">
+            <br><br>
+            <label for="uniEmail">University / Personal Email:*</label><br>
+            <input type="text" id="uniEmail" name="uniEmail" placeholder="student@aastugebeya.edu.et" required>
+        </fieldset>
     </form>
+<br><br>
+   <form>
+    <fieldset>
+        <legend><b>4. Showcase Photo & Terms</b></legend>
+        <label for="businessPhoto">Upload Business Logo / Product Sample Photo (Optional)</label><br>
+         <input type="file" id="photo" name="photo" accept="image/*">
 
-    <h3>Confirm and Submit</h3>
-    <p>Please review and agree to our guidlines</p>
-    <input type="checkbox">
-    <label>I confirm that the information provided is accurate</label><br>
-    <input type="checkbox">
-    <label>I agree to AASTU Marketplace selling guidlines</label><br><br>
+         <br> <br>
+         <input type="checkbox" id="agreement" name="agreement" required>
 
-    <button>Submit Listing</button>
-    <button>Reset Form</button>
-    <button>Cancel</button>
+        <label for="agreement">
+            I confirm that I am a current AASTU student
+            and agree to uphold the AASTU Community Seller
+            Guidelines and provide respectful service.
+        </label>
+     
+    </fieldset>
+     <br>
 
+    <button type="submit">Submit Business Listing Application</button>
+
+    <button type="reset">Clear Form</button>
+   </form>
+   <hr>
+   <h2>AASTU ገበያ — Sell With Us Portal</h2>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="discover.html">Discover All</a> |
+        <a href="shops.html">Campus Shops</a> |
+        <a href="cafes.html">Cafés & Menus</a> |
+        <a href="sellers.html">Student Sellers</a>
+    </nav>
+
+    <footer>
+    <p>
+        &copy; 2026 AASTU ገበያ Team.
+        Internet Programming 1 Phase 1 Deliverable.
+    </p>
+ 
 </body>
 
 </html>
